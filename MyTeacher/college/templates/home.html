@@ -1,0 +1,80 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <title>MyTeacher</title>
+</head>
+<body>
+    <img src="https://i.pinimg.com/originals/4e/df/b5/4edfb52cb9a4024abfcf9b406b542399.jpg" alt="">
+    <div class="container">
+        <nav class="nav-bar"><h2 style="color: white;">MY TEACHER</h2></nav>
+        <div class="container-2" id="container-2"> 
+            <div class="head">
+                <h1>My</h1>
+                <h1>TEACHER</h1>
+                <p>STUDENTS FEEDBACK PORTAL</p>
+            </div>
+            <div class="login-form" id="student-login" style="display: none;">
+               <div class="login-form2">
+                    <h2 class="login-head">Student Login</h2>
+                    <div class="inps">
+                        <input type="integer" name="code">
+                        <input type="password" name="password">
+                        <button class="log-btn">Login</button>
+                    </div>
+               </div>
+            </div>
+            <div class="login-form" id="principal-login" style="display: none;">
+                <div class="login-form2">
+                    <h2 class="login-head">Principal Login</h2>
+                    <div class="inps">
+                        <input type="integer" name="code">
+                        <input type="password" name="password">
+                        <button class="log-btn">Login</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="login-form" id="college-login" style="display: none;">
+                <div class="login-form2">
+                    <h2 class="login-head">college Login</h2>
+                    <div class="inps">
+                        <input type="integer" name="code">
+                        <input type="password" name="password">
+                        <button class="log-btn">Login</button>
+                    </div>
+                </div>
+            </div>
+            <div class="btns">
+                <button class="login-btns" onclick="showLoginForm('student-login')">Student Login</button>
+                <button class="login-btns" onclick="showLoginForm('principal-login')">Principal Login</button>
+                <button class="login-btns" onclick="showLoginForm('college-login')">college Login</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        function showLoginForm(formId) {
+            // Hide all elements inside .container-2
+            var containerChildren = document.querySelector('.container-2').children;
+            for (var i = 0; i < containerChildren.length; i++) {
+                var element = containerChildren[i];
+                if (!element.classList.contains('login-form')) {
+                    element.style.display = 'none';
+                }
+            }
+
+            // Show the selected login form
+            var selectedForm = document.getElementById(formId);
+            if (selectedForm) {
+                selectedForm.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-2{
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 1;
+    width: 950px;
+    height: 82vh;
+}
+.nav-bar{
+    position: fixed;
+    top: 50px;
+    left: 200px;
+}
+.nav-bar h2{
+    letter-spacing: 0.5px;
+    font-size: 20px;
+    font-family: cursive;
+}
+.head{
+    position: relative;
+    top: 50px;
+    text-align: center;
+    color: white;
+}
+.head h1{
+    font-size: 70px;
+    margin: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.head p{
+    letter-spacing: 2px;
+}
+.btns{
+    position: relative;
+    top: 90px;
+    text-align: center;
+}
+
+.btns .login-btns{
+    width: 150px;
+    padding: 10px;
+    height: 40px;
+    margin-right: 50px;
+    background: transparent;
+    border: .5px solid white;
+    border-radius: 20px;
+    color: white;
+    transition: .4s ease-in;
+    letter-spacing: .5px;
+}
+.login-btns:hover{
+    background: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.login-form2{
+    width: 600px;
+    height: 60vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    left: 190px;
+    top: 50px;
+}
+.login-head{
+    text-align: center;
+    color: white;
+    position: relative;
+    top: 20px;
+}
+.inps{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.inps input{
+    width: 350px;
+    height: 33px;
+    margin-bottom: 30px;
+    background: transparent;
+    border: 0.1px solid white;
+    color: white;
+}
+.inps button{
+    width: 150px;
+    height: 35px;
+    background: transparent;
+    color: white;
+    border-radius: 20px;
+    border: 0.1px solid white;
+    letter-spacing: 1px;
+    transition: .4s ease-in;
+}
+.inps button:hover{
+    background: white;
+    color: black;
+    border: 1px solid black;
+}
